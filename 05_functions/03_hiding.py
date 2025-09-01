@@ -1,0 +1,26 @@
+# Hiding Implementation Details
+
+# You're building a simple app that register's users.
+# You want to separate concerns: getting input, validating it, and saving it.
+# Task:
+#   - Write `register_user()` that calls:
+#       - `get_input()`
+#       - `validate_input()`
+#       - `save_to_db()`
+
+def get_input():
+    print("Getting user input")
+
+def validate_input():
+    print("Validate the user info")
+
+def save_to_db():
+    print("Saving to db")
+
+def register_user():
+    get_input()
+    validate_input()
+    save_to_db()
+    print("User registration complete")
+
+register_user()
